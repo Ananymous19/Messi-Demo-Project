@@ -10,9 +10,21 @@
         h1 { margin: 0; font-size: 2.8rem; color: #6fffe9; }
         p.subtitle { font-size: 1.2rem; color: #5bc0be; margin-top: 10px; }
         .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background-color: #1c2541; padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .card { background-color: #1c2541; padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: center; }
+        .card p, .card ul { text-align: left; }
         h2 { color: #6fffe9; border-bottom: 2px solid #3a506b; padding-bottom: 8px; margin-top: 0; }
         ul { line-height: 1.8; padding-left: 20px; }
+        
+        /* CSS to make your GIF responsive and look great on mobile */
+        .gif-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #6fffe9;
+            margin-top: 10px;
+        }
+
         footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #5bc0be; }
     </style>
 </head>
@@ -21,7 +33,15 @@
         <h1>Lionel Messi</h1>
         <p class="subtitle">World Cup Champion & 8-Time Ballon d'Or Winner</p>
     </header>
+
     <div class="container">
+        <!-- NEW GIF CARD SECTION -->
+        <div class="card gif-container">
+            <h2>The Magic in Action</h2>
+            <!-- You can replace this URL with any direct link to a .gif file -->
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajdqbnVrNWV6MXRubmVqaHM3M2dra2xiYzYxdDlrYnJzcXlpdmQxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RGeqYyfLc1ipfU2fgS/giphy.gif" alt="Messi Goal Celebration GIF">
+        </div>
+
         <div class="card">
             <h2>Career Highlights</h2>
             <ul>
@@ -31,11 +51,13 @@
                 <li><strong>European Golden Shoe:</strong> 6-time winner</li>
             </ul>
         </div>
+
         <div class="card">
             <h2>About the Legend</h2>
             <p>Born in Rosario, Argentina, Lionel Andrés Messi transformed football with unmatched vision, dribbling, and scoring ability. From Barcelona to Paris, Inter Miami, and Argentina, he consistently redefined football excellence.</p>
         </div>
     </div>
+
     <footer>
         <p>Built with passion for the GOAT.</p>
     </footer>
